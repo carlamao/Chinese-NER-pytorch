@@ -1,0 +1,505 @@
+2019-01-25 03:16:21,103:INFO: device: cuda, n_gpu: 2, 16-bits training: True
+2019-01-25 03:16:21,103:INFO: Loading the datasets...
+2019-01-25 03:16:21,103:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2019-01-25 03:16:57,753:INFO: loading archive file bert-base-chinese-pytorch
+2019-01-25 03:16:57,754:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+2019-01-25 03:17:05,248:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2019-01-25 03:17:05,249:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2019-01-25 03:17:10,119:INFO: Starting training for 20 epoch(s)
+2019-01-25 03:17:10,119:INFO: Epoch 1/20
+2019-01-25 03:29:39,999:INFO: - Train metrics: loss: 00.00; f1: 95.90
+2019-01-25 03:30:02,809:INFO: - Val metrics: loss: 00.01; f1: 93.77
+2019-01-25 03:30:16,565:INFO: - Found new best F1
+2019-01-25 03:30:16,565:INFO: Epoch 2/20
+2019-01-25 03:42:35,186:INFO: - Train metrics: loss: 00.00; f1: 98.20
+2019-01-25 03:42:58,057:INFO: - Val metrics: loss: 00.01; f1: 95.16
+2019-01-25 03:43:11,751:INFO: - Found new best F1
+2019-01-25 03:43:11,751:INFO: Epoch 3/20
+2019-01-25 03:55:24,783:INFO: - Train metrics: loss: 00.00; f1: 98.93
+2019-01-25 03:55:47,373:INFO: - Val metrics: loss: 00.02; f1: 95.06
+2019-01-25 03:55:51,971:INFO: Epoch 4/20
+2019-01-25 04:07:54,169:INFO: - Train metrics: loss: 00.00; f1: 99.15
+2019-01-25 04:08:16,586:INFO: - Val metrics: loss: 00.02; f1: 95.22
+2019-01-25 04:08:23,019:INFO: - Found new best F1
+2019-01-25 04:08:23,019:INFO: Epoch 5/20
+2019-01-25 04:20:33,775:INFO: - Train metrics: loss: 00.00; f1: 99.39
+2019-01-25 04:20:56,560:INFO: - Val metrics: loss: 00.02; f1: 95.37
+2019-01-25 04:21:10,005:INFO: - Found new best F1
+2019-01-25 04:21:10,005:INFO: Epoch 6/20
+2019-01-25 04:33:15,432:INFO: - Train metrics: loss: 00.00; f1: 99.54
+2019-01-25 04:33:37,989:INFO: - Val metrics: loss: 00.02; f1: 95.50
+2019-01-25 04:33:51,402:INFO: - Found new best F1
+2019-01-25 04:33:51,402:INFO: Epoch 7/20
+2019-01-25 04:45:52,903:INFO: - Train metrics: loss: 00.00; f1: 99.58
+2019-01-25 04:46:15,469:INFO: - Val metrics: loss: 00.03; f1: 95.39
+2019-01-25 04:46:20,443:INFO: Epoch 8/20
+2019-01-25 04:58:27,467:INFO: - Train metrics: loss: 00.00; f1: 99.59
+2019-01-25 04:58:50,161:INFO: - Val metrics: loss: 00.03; f1: 95.30
+2019-01-25 04:58:54,659:INFO: Epoch 9/20
+2019-01-25 05:10:58,331:INFO: - Train metrics: loss: 00.00; f1: 99.71
+2019-01-25 05:11:20,969:INFO: - Val metrics: loss: 00.03; f1: 95.89
+2019-01-25 05:11:33,933:INFO: - Found new best F1
+2019-01-25 05:11:33,933:INFO: Epoch 10/20
+2019-01-25 05:23:34,668:INFO: - Train metrics: loss: 00.00; f1: 99.59
+2019-01-25 05:23:57,161:INFO: - Val metrics: loss: 00.03; f1: 95.42
+2019-01-25 05:24:01,986:INFO: Epoch 11/20
+2019-01-25 05:36:07,205:INFO: - Train metrics: loss: 00.00; f1: 99.88
+2019-01-25 05:36:29,956:INFO: - Val metrics: loss: 00.03; f1: 95.90
+2019-01-25 05:36:42,835:INFO: - Found new best F1
+2019-01-25 05:36:42,836:INFO: Epoch 12/20
+2019-01-25 05:48:44,861:INFO: - Train metrics: loss: 00.00; f1: 99.90
+2019-01-25 05:49:07,503:INFO: - Val metrics: loss: 00.03; f1: 95.88
+2019-01-25 05:49:12,045:INFO: Best val f1: 95.90
+2021-04-26 00:39:31,490:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 00:39:31,490:INFO: Loading the datasets...
+2021-04-26 00:39:31,491:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2021-04-26 00:40:02,516:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 00:40:02,516:INFO: Loading the datasets...
+2021-04-26 00:40:02,516:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2021-04-26 00:40:18,882:INFO: loading archive file bert-base-chinese-pytorch
+2021-04-26 00:40:18,884:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+2021-04-26 00:40:21,970:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2021-04-26 00:40:21,971:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2021-04-26 00:40:21,982:INFO: Starting training for 20 epoch(s)
+2021-04-26 00:40:21,982:INFO: Epoch 1/20
+2021-04-26 00:42:23,815:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 00:42:23,815:INFO: Loading the datasets...
+2021-04-26 00:42:23,816:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2021-04-26 00:43:13,704:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 00:43:13,704:INFO: Loading the datasets...
+2021-04-26 00:43:13,704:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2021-04-26 00:43:30,689:INFO: loading archive file bert-base-chinese-pytorch
+2021-04-26 00:43:30,690:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+2021-04-26 00:43:33,195:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2021-04-26 00:43:33,195:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2021-04-26 00:43:33,201:INFO: Starting training for 20 epoch(s)
+2021-04-26 00:43:33,201:INFO: Epoch 1/20
+2021-04-26 17:03:57,456:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 17:03:57,457:INFO: Loading the datasets...
+2021-04-26 17:03:57,458:INFO: loading vocabulary file macbert/vocab.txt
+2021-04-26 17:05:15,779:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 17:05:15,779:INFO: Loading the datasets...
+2021-04-26 17:05:15,780:INFO: loading vocabulary file macbert/vocab.txt
+2021-04-26 17:12:26,255:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 17:12:26,256:INFO: Loading the datasets...
+2021-04-26 17:12:26,257:INFO: loading vocabulary file macbert/vocab.txt
+2021-04-26 17:12:54,357:INFO: Starting training for 20 epoch(s)
+2021-04-26 17:12:54,361:INFO: Epoch 1/20
+2021-04-26 17:13:12,195:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 17:13:12,195:INFO: Loading the datasets...
+2021-04-26 17:13:12,195:INFO: loading vocabulary file macbert/vocab.txt
+2021-04-26 17:13:36,975:INFO: Starting training for 20 epoch(s)
+2021-04-26 17:13:36,976:INFO: Epoch 1/20
+2021-04-26 17:26:54,110:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 17:26:54,110:INFO: Loading the datasets...
+2021-04-26 17:26:54,111:INFO: loading vocabulary file macbert/vocab.txt
+2021-04-26 17:27:24,839:INFO: Starting training for 20 epoch(s)
+2021-04-26 17:27:24,840:INFO: Epoch 1/20
+2021-04-26 17:39:59,790:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 17:39:59,791:INFO: Loading the datasets...
+2021-04-26 17:39:59,791:INFO: loading vocabulary file macbert/vocab.txt
+2021-04-26 17:40:27,404:INFO: Starting training for 20 epoch(s)
+2021-04-26 17:40:27,405:INFO: Epoch 1/20
+2021-04-26 18:04:36,213:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:04:36,214:INFO: Loading the datasets...
+2021-04-26 18:05:58,038:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:05:58,039:INFO: Loading the datasets...
+2021-04-26 18:06:28,228:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:06:28,229:INFO: Loading the datasets...
+2021-04-26 18:07:03,808:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:07:03,810:INFO: Epoch 1/20
+2021-04-26 18:17:43,409:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:17:43,409:INFO: Loading the datasets...
+2021-04-26 18:18:20,974:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:18:20,976:INFO: Epoch 1/20
+2021-04-26 18:26:49,441:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:26:49,441:INFO: Loading the datasets...
+2021-04-26 18:30:05,913:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:30:05,913:INFO: Loading the datasets...
+2021-04-26 18:30:38,655:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:30:38,655:INFO: Epoch 1/20
+2021-04-26 18:34:42,706:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:34:42,706:INFO: Loading the datasets...
+2021-04-26 18:35:18,446:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:35:18,446:INFO: Epoch 1/20
+2021-04-26 18:38:33,882:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:38:33,882:INFO: Loading the datasets...
+2021-04-26 18:39:07,200:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:39:07,200:INFO: Epoch 1/20
+2021-04-26 18:40:15,314:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:40:15,315:INFO: Loading the datasets...
+2021-04-26 18:40:48,617:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:40:48,617:INFO: Epoch 1/20
+2021-04-26 18:45:44,412:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:45:44,412:INFO: Loading the datasets...
+2021-04-26 18:46:21,068:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:46:21,068:INFO: Epoch 1/20
+2021-04-26 18:50:50,066:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:50:50,066:INFO: Loading the datasets...
+2021-04-26 18:51:23,303:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:51:23,304:INFO: Epoch 1/20
+2021-04-26 18:52:51,006:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:52:51,007:INFO: Loading the datasets...
+2021-04-26 18:53:24,581:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:53:24,581:INFO: Epoch 1/20
+2021-04-26 18:54:28,498:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 18:54:28,498:INFO: Loading the datasets...
+2021-04-26 18:55:02,234:INFO: Starting training for 20 epoch(s)
+2021-04-26 18:55:02,234:INFO: Epoch 1/20
+2021-04-26 19:06:01,376:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:06:01,376:INFO: Loading the datasets...
+2021-04-26 19:06:36,512:INFO: Starting training for 20 epoch(s)
+2021-04-26 19:06:36,512:INFO: Epoch 1/20
+2021-04-26 19:09:33,038:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:09:33,038:INFO: Loading the datasets...
+2021-04-26 19:10:05,360:INFO: Starting training for 20 epoch(s)
+2021-04-26 19:10:05,360:INFO: Epoch 1/20
+2021-04-26 19:13:42,769:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:13:42,775:INFO: Loading the datasets...
+2021-04-26 19:14:09,489:INFO: loading archive file bert-base-chinese-pytorch
+2021-04-26 19:14:09,490:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+2021-04-26 19:14:11,891:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2021-04-26 19:14:11,891:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2021-04-26 19:14:11,897:INFO: Starting training for 20 epoch(s)
+2021-04-26 19:14:11,897:INFO: Epoch 1/20
+2021-04-26 19:22:20,103:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:22:20,103:INFO: Loading the datasets...
+2021-04-26 19:22:20,104:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2021-04-26 19:22:36,841:INFO: loading archive file bert-base-chinese-pytorch
+2021-04-26 19:22:36,842:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+2021-04-26 19:22:39,235:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2021-04-26 19:22:39,235:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2021-04-26 19:22:39,241:INFO: Starting training for 20 epoch(s)
+2021-04-26 19:22:39,241:INFO: Epoch 1/20
+2021-04-26 19:24:44,586:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:24:44,586:INFO: Loading the datasets...
+2021-04-26 19:24:44,587:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2021-04-26 19:25:05,800:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:25:05,800:INFO: Loading the datasets...
+2021-04-26 19:26:36,740:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:26:36,740:INFO: Loading the datasets...
+2021-04-26 19:26:36,741:INFO: loading vocabulary file bert-base-chinese-pytorch/vocab.txt
+2021-04-26 19:26:53,656:INFO: loading archive file bert-base-chinese-pytorch
+2021-04-26 19:26:53,658:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+2021-04-26 19:26:56,067:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2021-04-26 19:26:56,067:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2021-04-26 19:26:56,072:INFO: Starting training for 20 epoch(s)
+2021-04-26 19:26:56,072:INFO: Epoch 1/20
+2021-04-26 19:31:51,035:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:31:51,035:INFO: Loading the datasets...
+2021-04-26 19:31:51,036:ERROR: Model name 'hfl/chinese-macbert-base' was not found in model name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese). We assumed 'hfl/chinese-macbert-base' was a path or url but couldn't find any file associated to this path or url.
+2021-04-26 19:32:05,360:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:32:05,360:INFO: Loading the datasets...
+2021-04-26 19:32:41,292:INFO: Starting training for 20 epoch(s)
+2021-04-26 19:32:41,292:INFO: Epoch 1/20
+2021-04-26 19:37:09,784:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 19:37:09,784:INFO: Loading the datasets...
+2021-04-26 19:37:42,728:INFO: Starting training for 20 epoch(s)
+2021-04-26 19:37:42,728:INFO: Epoch 1/20
+2021-04-26 20:24:25,615:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:24:25,616:INFO: Loading the datasets...
+2021-04-26 20:25:01,035:INFO: Starting training for 20 epoch(s)
+2021-04-26 20:25:01,035:INFO: Epoch 1/20
+2021-04-26 20:25:34,605:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:25:34,605:INFO: Loading the datasets...
+2021-04-26 20:26:02,981:ERROR: Model name 'hfl/chinese-macbert-base' was not found in model name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese). We assumed 'hfl/chinese-macbert-base' was a path or url but couldn't find any file associated to this path or url.
+2021-04-26 20:27:21,124:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:27:21,124:INFO: Loading the datasets...
+2021-04-26 20:27:34,473:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:27:34,473:INFO: Loading the datasets...
+2021-04-26 20:28:08,352:ERROR: Model name 'hfl/chinese-macbert-base' was not found in model name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese). We assumed 'hfl/chinese-macbert-base' was a path or url but couldn't find any file associated to this path or url.
+2021-04-26 20:32:46,871:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:32:46,871:INFO: Loading the datasets...
+2021-04-26 20:33:13,018:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:33:13,018:INFO: Loading the datasets...
+2021-04-26 20:41:48,746:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:41:48,746:INFO: Loading the datasets...
+2021-04-26 20:42:25,177:INFO: Starting training for 20 epoch(s)
+2021-04-26 20:42:25,181:INFO: Epoch 1/20
+2021-04-26 20:48:19,175:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 20:48:19,175:INFO: Loading the datasets...
+2021-04-26 20:48:57,405:INFO: Starting training for 20 epoch(s)
+2021-04-26 20:48:57,405:INFO: Epoch 1/20
+2021-04-26 21:04:30,050:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:04:30,050:INFO: Loading the datasets...
+2021-04-26 21:05:18,879:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:05:18,880:INFO: Loading the datasets...
+2021-04-26 21:05:50,612:INFO: loading archive file bert-base-chinese-pytorch
+2021-04-26 21:05:50,613:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+2021-04-26 21:05:54,578:INFO: Weights of BertForTokenClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+2021-04-26 21:05:54,579:INFO: Weights from pretrained model not used in BertForTokenClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+2021-04-26 21:05:54,586:INFO: Starting training for 20 epoch(s)
+2021-04-26 21:05:54,586:INFO: Epoch 1/20
+2021-04-26 21:09:40,007:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:09:40,007:INFO: Loading the datasets...
+2021-04-26 21:12:37,101:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:12:37,101:INFO: Loading the datasets...
+2021-04-26 21:16:05,683:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:16:05,684:INFO: Loading the datasets...
+2021-04-26 21:19:21,573:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:19:21,573:INFO: Loading the datasets...
+2021-04-26 21:19:58,660:INFO: Starting training for 20 epoch(s)
+2021-04-26 21:19:58,661:INFO: Epoch 1/20
+2021-04-26 21:20:59,148:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:20:59,148:INFO: Loading the datasets...
+2021-04-26 21:21:35,370:INFO: Starting training for 20 epoch(s)
+2021-04-26 21:21:35,370:INFO: Epoch 1/20
+2021-04-26 21:22:59,021:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:22:59,021:INFO: Loading the datasets...
+2021-04-26 21:23:34,858:INFO: Starting training for 20 epoch(s)
+2021-04-26 21:23:34,858:INFO: Epoch 1/20
+2021-04-26 21:51:18,798:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-26 21:51:18,798:INFO: Loading the datasets...
+2021-04-26 21:52:02,093:INFO: Starting training for 20 epoch(s)
+2021-04-26 21:52:02,093:INFO: Epoch 1/20
+2021-04-27 16:38:24,552:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 16:38:24,553:INFO: Loading the datasets...
+2021-04-27 16:40:23,143:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 16:40:23,143:INFO: Loading the datasets...
+2021-04-27 16:40:56,900:INFO: Starting training for 20 epoch(s)
+2021-04-27 16:40:56,903:INFO: Epoch 1/20
+2021-04-27 19:57:11,330:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 19:57:11,331:INFO: Loading the datasets...
+2021-04-27 19:58:14,760:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 19:58:14,760:INFO: Loading the datasets...
+2021-04-27 19:58:43,129:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 19:58:43,129:INFO: Loading the datasets...
+2021-04-27 20:07:37,545:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:07:37,546:INFO: Loading the datasets...
+2021-04-27 20:08:36,207:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:08:36,207:INFO: Loading the datasets...
+2021-04-27 20:13:38,936:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:13:38,936:INFO: Loading the datasets...
+2021-04-27 20:21:13,073:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:21:13,073:INFO: Loading the datasets...
+2021-04-27 20:23:31,261:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:23:31,262:INFO: Loading the datasets...
+2021-04-27 20:26:58,268:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:26:58,268:INFO: Loading the datasets...
+2021-04-27 20:30:02,091:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:30:02,091:INFO: Loading the datasets...
+2021-04-27 20:30:41,560:INFO: Starting training for 20 epoch(s)
+2021-04-27 20:30:41,560:INFO: Epoch 1/20
+2021-04-27 20:33:21,788:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:33:21,788:INFO: Loading the datasets...
+2021-04-27 20:36:05,758:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:36:05,759:INFO: Loading the datasets...
+2021-04-27 20:36:39,096:INFO: Starting training for 20 epoch(s)
+2021-04-27 20:36:39,097:INFO: Epoch 1/20
+2021-04-27 20:37:21,420:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:37:21,420:INFO: Loading the datasets...
+2021-04-27 20:37:57,426:INFO: Starting training for 20 epoch(s)
+2021-04-27 20:37:57,426:INFO: Epoch 1/20
+2021-04-27 20:39:56,942:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:39:56,942:INFO: Loading the datasets...
+2021-04-27 20:46:18,001:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:46:18,001:INFO: Loading the datasets...
+2021-04-27 20:46:28,800:INFO: Starting training for 20 epoch(s)
+2021-04-27 20:46:28,800:INFO: Epoch 1/20
+2021-04-27 20:47:12,545:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:47:12,546:INFO: Loading the datasets...
+2021-04-27 20:48:42,675:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:48:42,675:INFO: Loading the datasets...
+2021-04-27 20:49:04,352:INFO: Starting training for 20 epoch(s)
+2021-04-27 20:49:04,353:INFO: Epoch 1/20
+2021-04-27 20:49:21,328:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:49:21,328:INFO: Loading the datasets...
+2021-04-27 20:49:32,481:INFO: Starting training for 20 epoch(s)
+2021-04-27 20:49:32,482:INFO: Epoch 1/20
+2021-04-27 20:49:58,857:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-27 20:49:58,857:INFO: Loading the datasets...
+2021-04-27 20:50:09,287:INFO: Starting training for 20 epoch(s)
+2021-04-27 20:50:09,287:INFO: Epoch 1/20
+2021-04-28 20:30:04,058:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:30:04,058:INFO: Loading the datasets...
+2021-04-28 20:41:59,535:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:41:59,536:INFO: Loading the datasets...
+2021-04-28 20:46:04,602:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:46:04,603:INFO: Loading the datasets...
+2021-04-28 20:47:11,214:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:47:11,215:INFO: Loading the datasets...
+2021-04-28 20:47:35,650:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:47:35,650:INFO: Loading the datasets...
+2021-04-28 20:54:06,605:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:54:06,607:INFO: Loading the datasets...
+2021-04-28 20:56:00,193:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:56:00,193:INFO: Loading the datasets...
+2021-04-28 20:58:23,322:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 20:58:23,322:INFO: Loading the datasets...
+2021-04-28 21:02:32,453:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:02:32,454:INFO: Loading the datasets...
+2021-04-28 21:03:22,478:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:03:22,478:INFO: Loading the datasets...
+2021-04-28 21:38:06,562:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:38:06,563:INFO: Loading the datasets...
+2021-04-28 21:39:29,532:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:39:29,532:INFO: Loading the datasets...
+2021-04-28 21:41:58,022:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:41:58,023:INFO: Loading the datasets...
+2021-04-28 21:46:09,730:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:46:09,731:INFO: Loading the datasets...
+2021-04-28 21:51:01,487:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:51:01,488:INFO: Loading the datasets...
+2021-04-28 21:51:57,739:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:51:57,739:INFO: Loading the datasets...
+2021-04-28 21:53:05,285:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:53:05,285:INFO: Loading the datasets...
+2021-04-28 21:55:51,571:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 21:55:51,572:INFO: Loading the datasets...
+2021-04-28 22:03:22,811:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 22:03:22,811:INFO: Loading the datasets...
+2021-04-28 22:03:34,528:INFO: Starting training for 20 epoch(s)
+2021-04-28 22:03:34,529:INFO: Epoch 1/20
+2021-04-28 22:04:21,604:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 22:04:21,604:INFO: Loading the datasets...
+2021-04-28 22:04:34,768:INFO: Starting training for 20 epoch(s)
+2021-04-28 22:04:34,768:INFO: Epoch 1/20
+2021-04-28 22:06:11,246:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 22:06:11,246:INFO: Loading the datasets...
+2021-04-28 22:06:29,023:INFO: Starting training for 20 epoch(s)
+2021-04-28 22:06:29,025:INFO: Epoch 1/20
+2021-04-28 22:06:46,873:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-28 22:06:46,876:INFO: Loading the datasets...
+2021-04-28 22:07:05,369:INFO: Starting training for 20 epoch(s)
+2021-04-28 22:07:05,369:INFO: Epoch 1/20
+2021-04-30 22:05:03,004:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-30 22:05:03,005:INFO: Loading the datasets...
+2021-04-30 22:05:39,551:INFO: Starting training for 20 epoch(s)
+2021-04-30 22:05:39,552:INFO: Epoch 1/20
+2021-04-30 22:12:41,469:INFO: device: cpu, n_gpu: 0, 16-bits training: False
+2021-04-30 22:12:41,469:INFO: Loading the datasets...
+2021-04-30 22:13:18,037:INFO: Starting training for 20 epoch(s)
+2021-04-30 22:13:18,038:INFO: Epoch 1/20
