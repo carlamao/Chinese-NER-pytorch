@@ -6,7 +6,36 @@ To download the file
 git clone https://github.com/carlamao/Chinese-NER-pytorch
 ```
 
+Requirements:
+```
+pip install transformers
+```
+
 The msra data can be downloaded here: only download msra_test_bio and msra_train_bio https://github.com/lemonhu/NER-BERT-pytorch/tree/master/data/msra
+
+To preprocess the MSRA data, run:
+```
+python build_msra_dataset_tags.py
+```
+
+To preprocess the Weibo data, run:
+```
+python wei_dataset.py
+```
+
+To preprocess the People's Daily data, run:
+```
+python People'sDaily.py
+```
+
+To preprocess the Resume data, run:
+```
+python resume_dataset.py
+```
+To preprocess the data, Chinese medical data run:
+```
+python CNMER_dataset.py
+```
 
 To run the code on the base parameters and MSRA data:
 ```
