@@ -1,7 +1,10 @@
 # Chinese-NER-pytorch
 Chinese NER task on pytorch using BERT+ softmax, MacBERT + softmax and RoBERTa + softmax
 
-To download the file, 
+To download the file
+```
+git clone https://github.com/carlamao/Chinese-NER-pytorch
+```
 
 The msra data can be downloaded here: only download msra_test_bio and msra_train_bio https://github.com/lemonhu/NER-BERT-pytorch/tree/master/data/msra
 
