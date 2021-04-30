@@ -18,38 +18,43 @@ To preprocess the MSRA data, run:
 python build_msra_dataset_tags.py
 ```
 
-To preprocess the Weibo data, run:
+To preprocess the **Weibo** data, run:
 ```
 python wei_dataset.py
 ```
 
-To preprocess the People's Daily data, run:
+To preprocess the **People's Daily** data, run:
 ```
 python People'sDaily.py
 ```
 
-To preprocess the Resume data, run:
+To preprocess the **Resume** data, run:
 ```
 python resume_dataset.py
 ```
-To preprocess the data, Chinese medical data run:
+To preprocess the data, **Chinese medical** data run:
 ```
 python CNMER_dataset.py
 ```
 
-To run the code on the base parameters and MSRA data:
+To run the model on the base parameters and MSRA data:
 ```
 python train.py 
 ```
-To change the parameters for example:
-To run the code using MacBERT softmax on the Weibo dataset:
+
+
+To change the parameters for example: to train MacBERT softmax on the Weibo dataset, run:
 ```
 python train.py --data_dir data/wei --bert_model_dir hfl/chinese-macbert-base --model_dir experiments/base_model
 ```
 
-To run the model with CRF:
+To train the model with CRF, run:
 ```
 python train.py --data_dir data/wei --bert_model_dir hfl/chinese-macbert-base --model_dir experiments/base_model_CRF
 ```
 
+To evaluate the trained model, run:
+```
+python evaluate.py
+```
 
