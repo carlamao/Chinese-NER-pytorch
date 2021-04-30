@@ -37,7 +37,7 @@ To preprocess the data, **Chinese medical** data run:
 python CNMER_dataset.py
 ```
 
-To run the model on the base parameters and MSRA data:
+To train the MacBERT Softmax model on the base parameters and MSRA data:
 ```
 python train.py 
 ```
